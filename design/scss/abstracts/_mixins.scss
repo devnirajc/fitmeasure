@@ -1,0 +1,74 @@
+// -----------------------------------------------------------------------------
+// This file contains all application-wide Sass mixins.
+// -----------------------------------------------------------------------------
+/// Event wrapper
+/// @author Harry Roberts
+/// @param {Bool} $self [false] - Whether or not to include current selector
+/// @link https://twitter.com/csswizardry/status/478938530342006784 Original tweet from Harry Roberts
+@mixin on-event($self: false) {
+    @if $self {
+        &,
+        &:hover,
+        &:active,
+        &:focus {
+            @content;
+        }
+    }
+    @else {
+        &:hover,
+        &:active,
+        &:focus {
+            @content;
+        }
+    }
+}
+/// Make a context based selector a little more friendly
+/// @author Hugo Giraudel
+/// @param {String} $context
+@mixin when-inside($context) {
+    #{$context} & {
+        @content;
+    }
+}
+// mixins for font faces
+@mixin font-face($font-family, $file-path, $font-weight, $font-style) {
+    @font-face {
+        font-family: $font-family;
+        src: url('#{$file-path}#{$font-family}.ttf') format('truetype');
+        font-weight: $font-weight;
+        font-style: $font-style;
+    }
+}
+//mixins for font-face
+@mixin font-family($font-style, $font-weight, $font-size, $font-family){
+    font:$font-style $font-weight $font-size $font-family;
+}
+
+//mixins for border style
+@mixin border($style, $color, $sides) {
+    @if ($style !="") {
+        @if ($sides=="") {
+            border: $style $color;
+        }
+        @else {
+            @each $side in $sides {
+                @if ($side=='top' or $side=='right' or $side=='bottom' or $side=='left') {
+                    border-#{$side}: $style $color;
+                }
+            }
+        }
+    }
+}
+
+//mixins for border radius
+@mixin border-radius($radius) {
+    -moz-border-radius: $radius;
+    -webkit-border-radius: $radius;
+    -ms-border-radius: $radius;
+    border-radius: $radius;
+}
+// mixins for font-size
+@mixin font-size($size) {
+    font-size: $size;
+    /*font-size: calculateRem($size);*/
+}

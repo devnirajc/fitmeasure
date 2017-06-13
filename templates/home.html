@@ -1,0 +1,17 @@
+<div ng-controller="mainCtrl" class="container">
+    <main>
+        <div class="wrapper">
+            <div class="container">
+                <div class="col-md-6">
+                    <h1 class="text-uppercase bold">where your journey begins</h1>
+                    <h2 class="text-uppercase">Discover your next great adventure, become an explorer to get started!</h2>
+                    <p>Your Salary?</p>
+                    <input class="form-control" type="text" ng-model="salary" style="color: #000;">
+                    <br/>How much should you invest in shopping?
+                    <input class="form-control" type="text" ng-model="percentage" style="color: #000;">%
+                    <br/>The amount to be spent on gadgets will be:<span>{{result() | currency:'&#8377;'}}</span>
+                </div>
+            </div>
+        </div>
+    </main>
+</div>

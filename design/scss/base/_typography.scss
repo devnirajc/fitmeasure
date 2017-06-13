@@ -1,0 +1,13 @@
+/**
+ * Basic typography style for copy text
+ */
+body {
+    color: $text-color;
+    font: normal 200% / 1.4 $font-jaldi-regular;
+}
+.font-1 {
+	font-size: 1rem;
+}
+.font-2 {
+	font-size: 2rem;
+}

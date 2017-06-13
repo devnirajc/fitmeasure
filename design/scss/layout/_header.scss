@@ -1,0 +1,10 @@
+// -----------------------------------------------------------------------------
+// This file contains all styles related to the header of the site/application.
+// -----------------------------------------------------------------------------
+
+// css for top-header
+.top-header {
+	background-color: $black;
+    @include border(1px solid, $white-bottom-border, bottom);
+    color: $font-white;
+}

@@ -1,0 +1,9 @@
+// -----------------------------------------------------------------------------
+// This file contains all @font-face declarations, if any.
+// -----------------------------------------------------------------------------
+
+
+@include font-face($font-jaldi-regular, $file-path, normal, normal);
+@include font-face($font-jaldi-bold, $file-path, normal, normal);
+@include font-face($font-owsald-regular, $file-path, normal, normal);
+@include font-face($font-owsald-bold, $file-path, normal, normal);

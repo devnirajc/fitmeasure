@@ -1,0 +1,285 @@
+// -----------------------------------------------------------------------------
+// This file contains styles that are specific to the home page.
+// -----------------------------------------------------------------------------
+.padding-xs {
+    padding: 0.3% 0;
+}
+
+.font-xs-1 {
+    @include font-size(2rem);
+}
+
+.font-xs {
+    @include font-size(15px);
+}
+
+.font-md {
+    @include font-family(normal, normal, 20px, $font-owsald-bold);
+}
+
+.font-lg {
+    @include font-family(normal, normal, 50px, $font-jaldi-bold);
+}
+
+.container-bg-img {
+    background: url("../images/51619_usa_jacksonville.jpg") no-repeat;
+    color: $font-white;
+}
+
+.padding-1 {
+    padding: 1% 0;
+}
+
+.padding-2 {
+    padding: 2% 0;
+}
+
+.padding-3 {
+    padding: 3% 0;
+}
+
+.padding-4 {
+    padding: 4% 0;
+}
+
+.padding-5 {
+    padding: 5% 0;
+}
+
+.padding-6 {
+    padding: 6% 0;
+}
+
+.padding-7 {
+    padding: 7% 0;
+}
+
+.padding-8 {
+    padding: 8% 0;
+}
+
+.padding-9 {
+    padding: 9% 0;
+}
+
+.bold {
+    @include font-family(normal,
+    normal,
+    40px,
+    $font-owsald-bold);
+}
+
+.form-search-tour {
+    background-color: $font-white;
+    color: $black;
+}
+
+.form-search-tour {
+    form {
+        padding: 5% 10% 15%;
+    }
+    h2 {
+        margin-bottom: 0px;
+    }
+    h3 {
+        margin: 0px 0px 25px 0px;
+    }
+    input {
+        padding: 20px 12px;
+        font-size: 17px;
+    }
+    .form-group {
+        position: relative;
+        margin-bottom: 5%;
+    }
+    i {
+        position: absolute;
+        right: 3%;
+        top: 25%;
+    }
+}
+
+.img-bottom-container {
+    position: relative;
+    background: rgb(64, 181, 216);
+    padding: 2%;
+}
+
+.font-grey {
+    color: $mid-grey;
+}
+
+.img-center-div {
+    margin: 0 auto;
+}
+
+.text-overlap {
+    position: absolute;
+    text-align: center;
+    margin: 0 auto;
+    top: 45%;
+    left: 30%;
+    color: #fff;
+}
+
+h1.grey-head {
+    color: $heading-grey;
+}
+
+.container-bg-img-deal {
+    background: url("../images/Cruise_jumbo.jpg") no-repeat;
+    background-size: cover;
+}
+
+.data-card {
+    background: #fff;
+    margin: 10% 0;
+    padding-bottom: 10%;
+}
+
+.tour-price {
+    margin: 0 auto;
+    text-align: center;
+    background: #479fff;
+    width: 40%;
+    position: absolute;
+    bottom: -9%;
+    left: 30%;
+    color: #fff;
+    font: normal normal 25px "Oswald-Bold";
+    padding: 2%;
+}
+
+.tour-price span {
+    font-size: 15px;
+}
+
+.discount-img {
+    position: relative;
+}
+
+.discount-text {
+    padding: 10% 3%;
+}
+
+.discount-text h3 {
+    font: normal normal 35px "Oswald-Bold";
+    color: #535353;
+}
+
+.discount-text p {
+    line-height: 20px;
+}
+
+.data-card button {
+    background: #006fe5 !important;
+    border: 0 !important;
+    padding: 3% 9% !important;
+    font-size: 20px !important;
+}
+
+.tour-by-beauty-trips .col-md-4 {
+    margin-bottom: 0.12% !important;
+    padding-right: 0 !important;
+    padding-left: 0 !important;
+    position: relative;
+}
+
+.tour-by-beauty-trips .col-md-4 img {
+    width: 99.7%;
+}
+.tour-by-beauty-trips .col-md-4 img:hover{
+    opacity: 0.65;
+}
+.tour-img-text, .wrapper-tour-text {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    color: #fff;
+    text-align: center;
+    
+}
+.tour-img-text p:first-child {
+	font: normal normal 30px "Oswald-Bold";
+}
+.tour-img-text p:last-child {
+	font: normal 20px "Jaldi-Regular";
+}
+.news-and-event{
+    background: #ebebeb;
+    padding: 4% 0;
+}
+.wrapper-luxury{
+    position: relative;
+}
+.news-inner-cards{
+    padding-top: 3%;
+}
+.news-and-event .img-container, .news-and-event .col-md-4 .info-container{
+    background: #fff;
+}
+.news-and-event .img-container img{
+    padding: 15px;
+}
+.news-and-event .col-md-4 .info-container h3 {
+	color: #60acff;
+    font: normal normal 20px "Oswald-bold";
+    padding: 15px;
+    margin: 0 !important;
+}
+.news-and-event .col-md-4 .info-container ul {
+    padding: 15px;
+}
+.news-and-event .col-md-4 .info-container ul p{
+    font-weight: normal;
+    margin-top: 20px;
+    font: normal 18px/22px "Jaldi-Regular";
+}
+.wrapper-tour-text h1{
+    color: #fff;
+    font: normal normal 5em "Oswald-bold";
+    margin: 0px;
+}
+.wrapper-tour-text h4{
+    font: normal 22px "Jaldi-Regular";
+}
+.wrapper-tour-text a{
+    border-radius: 50% 50%;
+    background: #479fff;
+    color: #fff;
+    text-decoration: none;
+    padding: 10% 6%;
+    margin-top: 9%;
+    display: table;
+    margin: 0 auto;
+    font: normal normal 25px "Oswald-bold";
+}
+.footer-text-container{
+    font: normal normal 15px/24px "Oswald-Regular";
+    padding: 2% 0;
+}
+.footer-text-container ul, .footer-text-container form{
+    padding-top: 9%;
+}
+.footer-text-container ul li i{
+    background: #479fff;
+    color: #fff;
+    border-radius: 50%;
+    padding: 11px 16px;
+    font-size: 25px;
+}
+.footer-text-container form button{
+    background: #006fe5 !important;
+    border: 0 !important;
+    padding: 3% 9% !important;
+    font-size: 12px !important;
+}
+.bottom-footer-text{
+    border-top: 1px solid #eee;
+}
+.bottom-footer-text ul{
+    font: normal 14px "Jaldi-Regular";
+    padding: 1% 0;
+}
