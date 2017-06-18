@@ -17,6 +17,11 @@ app.config(function ($stateProvider, $urlRouterProvider) {
             templateUrl: "templates/page1.html",
             controller: 'page1Ctrl'
         })
+        .state('bmi', {
+            url: "/bmi",
+            templateUrl: "templates/bmi.html",
+            controller: 'bmiCtrl'
+        })
         .state('page2', {
             url: "/page2",
             templateUrl: "templates/page2.html",

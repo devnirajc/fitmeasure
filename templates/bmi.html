@@ -1,0 +1,27 @@
+<div class="wrapper">
+    <div ng-controller="bmiCtrl" class="container">
+        <div class="row">
+            <div class="col-md-6">
+                <h2>Calculate BMI index</h2>
+                <p>
+                    <label>your height in feet and inches</label></p>
+                <p><input ng-model="feet" type="number" class="" placeholder="e.g. 5 feet" />
+                <input ng-model="inches" type="number" class="" placeholder="e.g. 11 inches" />
+                    </p>
+
+                <p><label>your weight in kg</label></p>
+                <input ng-model="weight" type="number" class="" placeholder="e.g. 145" />
+
+                <p>your BMI <span>{{getBmi()}}</span></p>
+                <p>{{getbmicategory()}}</p>
+            </div>
+            <div class="col-md-6">
+                <h2>Metric conversion calculator</h2>
+                <p>kg to lbs</p>
+                <input ng-model="weight1" type="number" class="" placeholder="56" /><span> kg </span>
+                <p>your weight is </p>
+                <span>{{metricconverter()}}</span>
+            </div>
+        </div>
+    </div>
+</div>

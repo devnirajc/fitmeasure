@@ -1,34 +1,36 @@
-<div class="page4 container" ng-controller="page4Ctrl">
-    <p>window session in angular js working example</p>
-    <p>{{ count }}</p>
-    <div>
-        <img id="img16" src="http://placehold.it/351x350" />
-        <a href="javascript:void(0)" ng-click="addItem('16')">Add to Cart</a>
+<div class="wrapper">
+    <div class="page4 container" ng-controller="page4Ctrl">
+        <p>window session in angular js working example</p>
+        <p>{{ count }}</p>
+        <div>
+            <img id="img16" src="http://placehold.it/351x350" />
+            <a href="javascript:void(0)" ng-click="addItem('16')">Add to Cart</a>
+        </div>
+        <div>
+            <img id="img5" src="http://placehold.it/352x350" />
+            <a href="javascript:void(0)" ng-click="addItem('5')">Add to Cart</a>
+        </div>
+        <div>
+            <img id="img32" src="http://placehold.it/353x350" />
+            <a href="javascript:void(0)" ng-click="addItem('32')">Add to Cart</a>
+        </div>
+        <div>
+            <img id="img43" src="http://placehold.it/354x350" />
+            <a href="javascript:void(0)" ng-click="addItem('43')">Add to Cart</a>
+        </div>
+        <hr />
+        <table>
+            <thead>
+                <td>Image</td>
+                <td>Options</td>
+            </thead>
+            <tbody>
+                <tr ng-repeat="data in images" id>
+                    <td><img ng-src="{{ data.img }}" /></td>
+                    <td><a href="javascript:void(0)" ng-click="removeItem(data.id)">Remove Item {{ data.id }}</a>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
     </div>
-    <div>
-        <img id="img5" src="http://placehold.it/352x350" />
-        <a href="javascript:void(0)" ng-click="addItem('5')">Add to Cart</a>
-    </div>
-    <div>
-        <img id="img32" src="http://placehold.it/353x350" />
-        <a href="javascript:void(0)" ng-click="addItem('32')">Add to Cart</a>
-    </div>
-    <div>
-        <img id="img43" src="http://placehold.it/354x350" />
-        <a href="javascript:void(0)" ng-click="addItem('43')">Add to Cart</a>
-    </div>
-    <hr />
-    <table>
-        <thead>
-            <td>Image</td>
-            <td>Options</td>
-        </thead>
-        <tbody>
-            <tr ng-repeat="data in images" id>
-                <td><img ng-src="{{ data.img }}" /></td>
-                <td><a href="javascript:void(0)" ng-click="removeItem(data.id)">Remove Item {{ data.id }}</a>
-                </td>
-            </tr>
-        </tbody>
-    </table>
 </div>

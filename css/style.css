@@ -720,9 +720,8 @@ h1.grey-head {
   position: relative; }
 
 /*# sourceMappingURL=main.css.map */
-.footer{
-    position: fixed;
-    bottom: 0;
-    left: 0;
-    right: 0;
+.wrapper{
+    display: table;
+    margin-top: 65px;
+    width: 100%;
 }
