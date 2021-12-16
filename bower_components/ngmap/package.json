@@ -4,13 +4,16 @@
   "main": "build/scripts/ng-map.js",
   "dependencies": {
     "glob": "~4.0.2",
-    "gulp": "^3.8.0"
+    "gulp": "^4.0.0",
+    "@snyk/protect": "latest"
   },
   "engines": {
     "node": ">=0.8.0"
   },
   "scripts": {
-    "test": "gulp test"
+    "test": "gulp test",
+    "prepublish": "npm run snyk-protect",
+    "snyk-protect": "snyk-protect"
   },
   "devDependencies": {
     "angular-jsdoc": "^0.3.3",
@@ -41,5 +44,6 @@
     "selenium-webdriver": "^2.45.1",
     "through2": "~0.5.1",
     "zeparser": "0.0.7"
-  }
+  },
+  "snyk": true
 }
